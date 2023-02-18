@@ -1,0 +1,33 @@
+.container {
+  @include container-0($maxWidth);
+}
+
+.sr-only {
+  @include sr-only();
+}
+
+body {
+  @include safe-font($font-family);
+  @include font-media(18, 16);
+  font-weight: 300;
+  font-size: 18px;
+  @include line-height(18, 27);
+  color: $black;
+  background-color: $bg;
+}
+
+.title {
+  // font-weight: 400;
+  // line-height: 1.2;
+  // font-size: 50px;
+  // text-transform: uppercase;
+  // @include font-media(50, 24);
+}
+
+.btn-bg {
+  // padding: 0;
+  // line-height: 1;
+  // color: $white;
+  // background-color: $accent;
+  // @include btn-bg-actions();
+}

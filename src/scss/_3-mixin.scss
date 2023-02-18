@@ -1,0 +1,150 @@
+@mixin container-0($maxWidth) {
+  max-width: #{$maxWidth}px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin container-1($padding) {
+  max-width: #{$maxWidth}px;
+  width: 100%;
+  padding: 0 #{$padding}px;
+  margin: 0 auto;
+}
+
+@mixin container-2($max-width, $padding) {
+  max-width: #{$max-width}px;
+  width: 100%;
+  padding: 0 #{$padding}px;
+  margin: 0 auto;
+}
+
+@mixin sr-only() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin checkbox-hidden() {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+@mixin radio-hidden() {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+@mixin line-height($font-size, $line-height-px) {
+  line-height: calc($line-height-px / $font-size);
+}
+
+@mixin link-actions() {
+  transition: color 0.3s, box-shadow 0.3s, text-shadow 0.3s ease-in-out;
+
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+}
+
+@mixin logo-actions() {
+  transition: opacity 0.3s, box-shadow 0.3s ease-in-out;
+
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+}
+
+@mixin nav-btn-actions() {
+  transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+}
+
+@mixin btn-bg-actions() {
+  transition: color 0.3s, box-shadow 0.3s, background-color 0.3s ease-in-out;
+
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+}
+
+@mixin link-line($color) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background-color: $color;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+//@include link-line();
+
+@mixin bg-shadow($color) {
+  box-shadow: inset 0 0 0 200vw $color;
+}
+
+//медиа
+@mixin r($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media (max-width: #{$xl}px) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media (max-width: #{$lg}px) {
+    @content;
+  }
+}
+
+@mixin md() {
+  @media (max-width: #{$md}px) {
+    @content;
+  }
+}
+
+@mixin sm() {
+  @media (max-width: #{$sm}px) {
+    @content;
+  }
+}
+
+@mixin xsm() {
+  @media (max-width: #{$xsm}px) {
+    @content;
+  }
+}
