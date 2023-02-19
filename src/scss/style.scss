@@ -1,15 +1,15 @@
 @import '0-vars';
 @import '1-font';
-@import '2-reset';
-@import '3-mixin';
+@import '2-mixin';
+@import '3-reset';
 @import '4-my-reset';
 // /*---------------------------------*/
 @import '5-global';
 // /*---------------------------------*/
-// @import '6-header';
+@import '6-header';
 // @import '7-breadcrumbs';
 // @import '8-hero';
 
 // // ---------------------------------
 
-// @import 'footer';
+@import 'footer';

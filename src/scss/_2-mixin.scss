@@ -1,10 +1,4 @@
-@mixin container-0($maxWidth) {
-  max-width: #{$maxWidth}px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-@mixin container-1($padding) {
+@mixin container($padding) {
   max-width: #{$maxWidth}px;
   width: 100%;
   padding: 0 #{$padding}px;
@@ -16,6 +10,50 @@
   width: 100%;
   padding: 0 #{$padding}px;
   margin: 0 auto;
+}
+
+@mixin body() {
+  @include safe-font($font-family);
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+@mixin title() {
+  font-weight: $title-font-weight;
+  font-size: $title-font-size;
+  // line-height: $title-font-height;
+  color: $title-color;
+}
+
+@mixin subtitle() {
+  font-weight: $subtitle-font-weight;
+  font-size: $subtitle-font-size;
+  // line-height: $subtitle-font-height;
+  color: $subtitle-color;
+}
+
+@mixin btn-bg($color, $bg-color) {
+  padding: 0;
+  line-height: 1;
+  color: $color;
+  background-color: $bg-color;
+  @include btn-bg-actions();
+}
+
+@mixin btn-bg-actions() {
+  transition: color 0.3s, background-color 0.3s ease-in-out;
+
+  &:hover {
+    color: $accent;
+    background-color: #fff;
+  }
+
+  &:focus {}
+
+  &:active {}
 }
 
 @mixin sr-only() {
@@ -81,16 +119,6 @@
   &:active {}
 }
 
-@mixin btn-bg-actions() {
-  transition: color 0.3s, box-shadow 0.3s, background-color 0.3s ease-in-out;
-
-  &:hover {}
-
-  &:focus {}
-
-  &:active {}
-}
-
 @mixin link-line($color) {
   position: relative;
 
@@ -105,7 +133,6 @@
     transition: opacity 0.3s ease-in-out;
   }
 }
-
 //@include link-line();
 
 @mixin bg-shadow($color) {
@@ -148,3 +175,4 @@
     @content;
   }
 }
+
