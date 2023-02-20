@@ -28,6 +28,7 @@ body {
 
 .btn-bg {
   @include btn-bg($white, $accent);
+  text-transform: uppercase;
 }
 
 .logo {
