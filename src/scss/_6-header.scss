@@ -49,14 +49,11 @@
 
   &__btn {
     font-size: 14px;
-    text-transform: uppercase;
     padding: 17px 54px;
   }
 
   &__social {
-    // padding-top: 70px;
     padding: 70px 0 20px 65px;
-
   }
 
   &__img {
@@ -83,117 +80,3 @@
 
   // &__icon {}
 }
-
-
-// .header {
-//   background-image: url(../img/decore/header-bg-color.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-
-//   &__top {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     padding-top: 47px;
-//   }
-
-//   &__phone {
-//     font-weight: 400;
-//     font-size: 36px;
-//     color: $white;
-//     @include font-media(36, 23);
-//     transition: color 0.3s ease-in-out;
-
-//     &:hover {
-//       color: $accent;
-//     }
-//   }
-
-//   &__burger {
-//     padding: 0;
-//     width: 25px;
-//     height: 25px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     position: relative;
-//     display: none;
-//   }
-
-//   &__burger-line {
-//     width: 100%;
-//     height: 2px;
-//     background-color: #fff;
-//     position: absolute;
-
-//     &::before,
-//     &::after {
-//       content: '';
-//       position: absolute;
-//       width: 100%;
-//       height: 2px;
-//       background-color: #fff;
-//       left: 0;
-//     }
-
-//     &::before {
-//       top: -6px;
-//     }
-
-//     &::after {
-//       bottom: -6px;
-//     }
-//   }
-
-//   &__content {
-//     padding: 105px 0 113px 0;
-//   }
-
-//   &__subtitle {
-//     color: $white;
-//     margin-bottom: 39px;
-//   }
-
-//   &__text {
-//     color: $white;
-//     margin-bottom: 30px;
-//   }
-
-//   &__btn {
-//     display: inline-block;
-//     padding: 15px 54px;
-//     font-weight: 300;
-//     font-size: 14px;
-//     text-transform: uppercase;
-//     @include line-height(14px, 21px);
-//     margin-bottom: 69px;
-//   }
-
-//   &__social {
-//     padding-left: 65px;
-//   }
-// }
-
-// .social {
-//   display: flex;
-
-//   &__item {
-//     &:not(:last-child) {
-//       margin-right: 10px;
-//     }
-//   }
-
-//   &__link {
-//     fill: #fff;
-//     transition: fill 0.3s ease-in-out;
-
-//     &:hover {
-//       fill: $accent;
-//     }
-//   }
-
-//   &__icon {
-//     height: 25.22px;
-//   }
-// }
