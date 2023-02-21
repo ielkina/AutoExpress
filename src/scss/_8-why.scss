@@ -1,0 +1,52 @@
+.benefits {
+  padding-bottom: 100px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__img {
+    object-fit: contain;
+    margin-right: 95px;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__title {
+    padding-left: 185px;
+    @include subtitle-decore();
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    background-color: $violet;
+    color: #fff;
+    padding: 25px 0 45px 185px;
+  }
+
+  &__item {
+    max-width: 316px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item-num {
+    font-weight: 400;
+    font-size: 36px;
+    @include line-height(36px, 53px);
+
+  }
+
+  &__item-title {
+    font-weight: 300;
+    font-size: 24px;
+    @include line-height(24px, 36px);
+  }
+
+  &__item-text {
+    color: $grey;
+  }
+}

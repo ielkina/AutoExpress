@@ -34,12 +34,13 @@
   }
 
   &__title {
-    line-height: 1.5;
+    // line-height: 1.5;
+    margin-bottom: -12px;
   }
 
   &__subtitle {
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
   }
 
   &__text {
@@ -56,6 +57,9 @@
   }
 
   &__img {
+    max-width: 814px;
+    min-height: 462px;
+    object-fit: contain;
     position: absolute;
     right: 0;
     bottom: -294px;

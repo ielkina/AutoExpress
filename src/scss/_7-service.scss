@@ -1,15 +1,15 @@
 .service {
-  padding-top: 314px;
+  padding-top: 299px;
   padding-bottom: 100px;
 
   &__title {
     @include subtitle-decore();
-    margin-bottom: 59px;
+    margin-bottom: 47px;
   }
 
   &__inner {
     display: flex;
-    margin-bottom: 36px;
+    margin-bottom: 37px;
   }
 
   &__content {
@@ -40,6 +40,7 @@
   }
 
   &__list {
+    max-width: 500px;
     counter-reset: my-counter;
   }
 

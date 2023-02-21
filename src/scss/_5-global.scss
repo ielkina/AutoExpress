@@ -4,7 +4,7 @@
 
 body {
   @include body();
-  @include line-height($font-size, 27px);
+  @include line-height(18px, 27px);
   @include font-media($font-size, 16);
 }
 
@@ -14,14 +14,14 @@ body {
 
 .title {
   @include title();
-  @include line-height($title-font-size, 107px);
+  @include line-height(72px, 107px);
   @include font-media($title-font-size, 36);
   text-transform: uppercase;
 }
 
 .subtitle {
   @include subtitle();
-  @include line-height($title-font-size, 53px);
+  @include line-height(36px, 53px);
   @include font-media($title-font-size, 23);
   text-transform: uppercase;
 }
