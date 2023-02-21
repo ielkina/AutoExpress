@@ -1,0 +1,122 @@
+.service {
+  padding-top: 314px;
+  padding-bottom: 100px;
+
+  &__title {
+    @include subtitle-decore();
+    margin-bottom: 59px;
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 36px;
+  }
+
+  &__content {
+    max-width: 504px;
+    margin-right: 96px;
+  }
+
+  &__content-box {
+    &:nth-child(1) {
+      margin-bottom: 68px;
+    }
+  }
+
+  &__content-title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: $accent;
+    margin-bottom: 12px;
+  }
+
+  // &__content-textbox {
+
+  // }
+
+  &__content-text {
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    counter-reset: my-counter;
+  }
+
+  &__item {
+    counter-increment: my-counter;
+    width: 450px;
+    box-shadow: 0 0 0 1px $grey;
+    padding: 12px 19px 9px 113px;
+    position: relative;
+    transition: box-shadow 0.3s, width 0.3s ease-in-out;
+
+    &::before {
+      position: absolute;
+      content: '0' counter(my-counter);
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 56px;
+      color: $grey;
+      left: 29px;
+      top: 8px;
+      transform: rotate(-90deg);
+      transition: color 0.3s ease-in-out;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &:hover {
+      width: 500px;
+      box-shadow: 0 0 0 2px $accent;
+
+      &::before {
+        color: $accent;
+      }
+
+      & .service__item-title {
+        color: $accent;
+      }
+    }
+  }
+
+  &__item-title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 27px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__item-text {
+    line-height: 27px;
+  }
+
+  //
+  &__btn {
+    padding: 18px 54.5px;
+  }
+
+  &__btn--decore {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: 'жми';
+      text-transform: uppercase;
+      color: $grey;
+      margin-left: 139px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 2px;
+      background-color: $grey;
+      right: -75px;
+      top: 50%;
+    }
+  }
+}

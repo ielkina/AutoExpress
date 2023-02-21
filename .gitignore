@@ -12,5 +12,5 @@ npm-debug.
 /src/components
 /marcho
 package-lock.json
-gulpfile.js
-package.json
+# gulpfile.js
+# package.json
