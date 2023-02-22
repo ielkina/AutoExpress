@@ -120,6 +120,7 @@ function scripts() {
     "node_modules/paroller.js/dist/jquery.paroller.js",
     "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
     "node_modules/vshowbox/dist/vshowbox.npm.js",
+    "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
     // "node_modules/slideshow-popup-modal/dist/bod-modal.js",
     "src/js/main.js",
   ])
