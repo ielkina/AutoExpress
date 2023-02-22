@@ -1,4 +1,17 @@
-// $(function () {});
+$(function () {
+  $(".done__inner").slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    // variableWidth: true,
+    // centerMode: true,
+  });
+});
+
 function testWebP(callback) {
   var webP = new Image();
   webP.onload = webP.onerror = function () {
