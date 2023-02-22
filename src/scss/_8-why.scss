@@ -15,15 +15,17 @@
   }
 
   &__title {
+    padding-top: 9px;
     padding-left: 185px;
+    line-height: 1;
     @include subtitle-decore();
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   &__list {
     background-color: $violet;
     color: #fff;
-    padding: 25px 0 45px 185px;
+    padding: 33px 0 45px 185px;
   }
 
   &__item {
@@ -36,7 +38,8 @@
   &__item-num {
     font-weight: 400;
     font-size: 36px;
-    @include line-height(36px, 53px);
+    line-height: 1;
+    // @include line-height(36px, 53px);
 
   }
 
