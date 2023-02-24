@@ -40,7 +40,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 80px;
     height: 3px;
     background-color: $violet;
@@ -48,6 +48,10 @@
     top: 50%;
     // transform: translateY(-50%);
     margin-left: 18px;
+    @include xsm() {
+      width: 30px;
+      margin-left: 5px;
+    }
   }
 }
 
@@ -69,9 +73,11 @@
     box-shadow: 0 0 0 1px $accent;
   }
 
-  &:focus {}
+  &:focus {
+  }
 
-  &:active {}
+  &:active {
+  }
 }
 
 @mixin sr-only() {
@@ -110,31 +116,40 @@
 @mixin link-actions() {
   transition: color 0.3s, box-shadow 0.3s, text-shadow 0.3s ease-in-out;
 
-  &:hover {}
+  &:hover {
+  }
 
-  &:focus {}
+  &:focus {
+  }
 
-  &:active {}
+  &:active {
+  }
 }
 
 @mixin logo-actions() {
   transition: opacity 0.3s, box-shadow 0.3s ease-in-out;
 
-  &:hover {}
+  &:hover {
+  }
 
-  &:focus {}
+  &:focus {
+  }
 
-  &:active {}
+  &:active {
+  }
 }
 
 @mixin nav-btn-actions() {
   transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
 
-  &:hover {}
+  &:hover {
+  }
 
-  &:focus {}
+  &:focus {
+  }
 
-  &:active {}
+  &:active {
+  }
 }
 
 @mixin link-line($color) {
@@ -166,31 +181,31 @@
 }
 
 @mixin xl() {
-  @media (max-width: #{$xl}px) {
+  @media (max-width: $xl) {
     @content;
   }
 }
 
 @mixin lg() {
-  @media (max-width: #{$lg}px) {
+  @media (max-width: $lg) {
     @content;
   }
 }
 
 @mixin md() {
-  @media (max-width: #{$md}px) {
+  @media (max-width: $md) {
     @content;
   }
 }
 
 @mixin sm() {
-  @media (max-width: #{$sm}px) {
+  @media (max-width: $sm) {
     @content;
   }
 }
 
 @mixin xsm() {
-  @media (max-width: #{$xsm}px) {
+  @media (max-width: $xsm) {
     @content;
   }
 }

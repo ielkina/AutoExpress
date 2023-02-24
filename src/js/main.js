@@ -3,12 +3,26 @@ $(function () {
     dots: true,
     arrows: false,
     slidesToShow: 3,
-    // slidesToScroll: 1,
-    // infinite: true,
-    // autoplay: true,
-    // autoplaySpeed: 6000,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 6000,
     // variableWidth: true,
     // centerMode: true,
+    responsive: [
+      {
+        breakpoint: 962,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 420,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
 

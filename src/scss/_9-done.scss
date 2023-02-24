@@ -1,11 +1,20 @@
-@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import "../../node_modules/slick-carousel/slick/slick.scss";
 
 .done {
   padding-bottom: 99px;
+  @include sm() {
+    padding-bottom: 50px;
+  }
+  @include md() {
+    text-align: center;
+  }
 
   &__title {
     @include subtitle-decore();
     margin-bottom: 49px;
+    @include xsm() {
+      margin-bottom: 26px;
+    }
   }
 
   &__inner {
@@ -29,7 +38,6 @@
     // padding: 4px 4px 11px;
     transition: color 0.3s, background-color 0.3s, box-shadow 0.3s ease-in-out;
 
-
     &:hover {
       box-shadow: 0 0 0 1px $accent;
       background-color: $accent;
@@ -39,7 +47,7 @@
 
   &__item-img {
     max-width: 100%;
-    // margin: 0 auto;
+    margin: 0 auto;
     margin-bottom: 14px;
   }
 
@@ -49,7 +57,8 @@
     margin-bottom: 5px;
   }
 
-  &__item-saving {}
+  &__item-saving {
+  }
 
   .slick-slider {
     // padding: 3px;
@@ -80,6 +89,12 @@
       background-color: $grey;
       margin: 0 10px;
       transition: all 0.3s ease-in-out;
+      @include sm() {
+        width: 23px;
+      }
+      @include xsm() {
+        margin: 0 5px;
+      }
     }
   }
 

@@ -2,11 +2,20 @@ $maxWidth: 1230; //макс ширина контейнера
 $minWidth: 320; //мин ширина контейнера
 
 //media
-$xl: 1130;
-$lg: 962;
-$md: 787;
-$sm: 560;
-$xsm: 420;
+//Bootstrap Breakpoints
+// $xxl: 1400px;
+//$xl: 1200px;
+//$lg: 992px;
+//$md: 768px;
+//$sm: 56px;
+//$xsm: 320px;
+
+//my Breakpoints
+$xl: 1130px;
+$lg: 962px;
+$md: 787px;
+$sm: 560px;
+$xsm: 420px;
 
 //color
 $bg: #fff;
